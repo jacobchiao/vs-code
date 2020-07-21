@@ -9,6 +9,7 @@ int main(void)
     fd = open("/dev/hellodev", O_RDWR);
     if(fd < 0){
         printf("can't open!\n");
+        printf("git test");
     }
     write(fd, &val, 4);
     return 0;
